@@ -155,8 +155,8 @@ for(model in 1:63){
 
 	model_name<-append(model_name,full_model_data[[1]]);
 	rss<-append(rss,full_model_data[[2]]);
-	k<-append(k,full_model_data[[3]]);
-	p<-append(p,full_model_data[[4]]);
+	k<-append(k,full_model_data[[4]]);
+	p<-append(p,full_model_data[[3]]);
 	s_squared<-append(s_squared,full_model_data[[6]]);
 	r_squared<-append(r_squared,full_model_data[[7]]);
 	adjusted_r_squared<-append(adjusted_r_squared,full_model_data[[8]]);
@@ -168,11 +168,11 @@ for(model in 1:63){
 
 #create final data frame 
 final_data_frame<-data.frame(models = model_name,
-					RSS = rss,k,p,S_Squared = s_squared,
+					RSS = rss,k = k,p=p,S_Squared = s_squared,
 					R_Squared = r_squared,Adjusted_R_Squared=adjusted_r_squared,
 					AIC = aic,APC = apc,BIC = bic,Mallows_Cp = cp);
 
 # An then last but not least, write the data frame export to an excel workbook
-write.xlsx(final_data_frame,file = 'subset models.xlsx');
+#write.xlsx(final_data_frame,file = 'subset models.xlsx');
 
 #DONE---now the diagnostics and analyisis of the data just generated :-)
