@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542590016221.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A7730A68",
+    "lastKnownWriteTime" : 7226435094589303907,
+    "last_content_update" : 1542590016221,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "B7253EED",
+        "caption" : "bodyfatdata",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=bodyfatdata&cache_key=B7253EED",
+        "displayedObservations" : 50,
+        "environment" : "",
+        "object" : "bodyfatdata",
+        "preview" : 0,
+        "totalObservations" : 50,
+        "variables" : 14
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

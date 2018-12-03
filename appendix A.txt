@@ -1,0 +1,241 @@
+> mod1<-lm(percentageFat~knee)
+> mod2<-lm(percentageFat~thigh)
+> mod3<-lm(percentageFat~hip)
+> mod4<-lm(percentageFat~abdomen)
+> mod5<-lm(percentageFat~chest)
+> mod6<-lm(percentageFat~neck)
+> mod7<-lm(percentageFat~weight)
+> mod8<-lm(percentageFat~biceps)
+> summary(mod1)
+
+Call:
+lm(formula = percentageFat ~ knee)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-15.583  -5.987  -1.411   5.019  29.547 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -45.8354    17.4801  -2.622 0.011673 *  
+knee          1.7287     0.4509   3.834 0.000367 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.454 on 48 degrees of freedom
+Multiple R-squared:  0.2345,    Adjusted R-squared:  0.2185 
+F-statistic:  14.7 on 1 and 48 DF,  p-value: 0.0003667
+
+> anova(mod1)
+Analysis of Variance Table
+
+Response: percentageFat
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+knee       1 1050.6 1050.64  14.701 0.0003667 ***
+Residuals 48 3430.4   71.47                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> summary(mod2)
+
+Call:
+lm(formula = percentageFat ~ thigh)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.9698  -4.4017  -0.1793   6.1363  20.9891 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -57.0808    14.7049  -3.882 0.000316 ***
+thigh         1.3375     0.2511   5.326 2.63e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.66 on 48 degrees of freedom
+Multiple R-squared:  0.3715,    Adjusted R-squared:  0.3584 
+F-statistic: 28.37 on 1 and 48 DF,  p-value: 2.631e-06
+
+> anova(mod2)
+Analysis of Variance Table
+
+Response: percentageFat
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+thigh      1 1664.6 1664.62   28.37 2.631e-06 ***
+Residuals 48 2816.4   58.68                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> summary(mod3)
+
+Call:
+lm(formula = percentageFat ~ hip)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-18.0472  -3.7298  -0.8837   4.6102  12.4380 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -86.7486    12.9565  -6.695 2.16e-08 ***
+hip           1.0799     0.1295   8.337 6.84e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.175 on 48 degrees of freedom
+Multiple R-squared:  0.5915,    Adjusted R-squared:  0.583 
+F-statistic: 69.51 on 1 and 48 DF,  p-value: 6.839e-11
+
+> anova(mod3)
+Analysis of Variance Table
+
+Response: percentageFat
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+hip        1 2650.7 2650.68  69.513 6.839e-11 ***
+Residuals 48 1830.3   38.13                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> summary(mod4)
+
+Call:
+lm(formula = percentageFat ~ abdomen)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10.0298  -2.8493  -0.1363   2.9513  13.3113 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -50.03207    5.86255  -8.534 3.47e-11 ***
+abdomen       0.74143    0.06076  12.202 2.54e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.771 on 48 degrees of freedom
+Multiple R-squared:  0.7562,    Adjusted R-squared:  0.7511 
+F-statistic: 148.9 on 1 and 48 DF,  p-value: 2.541e-16
+
+> anova(mod4)
+Analysis of Variance Table
+
+Response: percentageFat
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+abdomen    1 3388.6  3388.6   148.9 2.541e-16 ***
+Residuals 48 1092.4    22.8                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> summary(mod5)
+
+Call:
+lm(formula = percentageFat ~ chest)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.6961  -4.4535  -0.1689   2.8988  14.3625 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -61.21605   10.20882  -5.996 2.54e-07 ***
+chest         0.79278    0.09803   8.087 1.63e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.286 on 48 degrees of freedom
+Multiple R-squared:  0.5767,    Adjusted R-squared:  0.5679 
+F-statistic:  65.4 on 1 and 48 DF,  p-value: 1.627e-10
+
+> anova(mod5)
+Analysis of Variance Table
+
+Response: percentageFat
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+chest      1 2584.3 2584.31  65.401 1.627e-10 ***
+Residuals 48 1896.7   39.51                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> summary(mod6)
+
+Call:
+lm(formula = percentageFat ~ neck)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.4828  -4.5791   0.4207   4.1909  18.8400 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -85.5687    17.5147  -4.886 1.19e-05 ***
+neck          2.7725     0.4548   6.097 1.78e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.253 on 48 degrees of freedom
+Multiple R-squared:  0.4364,    Adjusted R-squared:  0.4247 
+F-statistic: 37.17 on 1 and 48 DF,  p-value: 1.784e-07
+
+> anova(mod6)
+Analysis of Variance Table
+
+Response: percentageFat
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+neck       1 1955.6 1955.61   37.17 1.784e-07 ***
+Residuals 48 2525.4   52.61                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> summary(mod7)
+
+Call:
+lm(formula = percentageFat ~ weight)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15.8973  -4.3123   0.0914   3.2287  16.9592 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -23.54287    5.91775  -3.978 0.000233 ***
+weight        0.24696    0.03239   7.625 8.17e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.498 on 48 degrees of freedom
+Multiple R-squared:  0.5477,    Adjusted R-squared:  0.5383 
+F-statistic: 58.13 on 1 and 48 DF,  p-value: 8.169e-10
+
+> anova(mod7)
+Analysis of Variance Table
+
+Response: percentageFat
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+weight     1 2454.4 2454.44  58.134 8.169e-10 ***
+Residuals 48 2026.6   42.22                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+> summary(mod8)
+
+Call:
+lm(formula = percentageFat ~ biceps)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-16.233  -5.220   0.618   5.838  22.155 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -34.6490    11.7606  -2.946  0.00495 ** 
+biceps        1.7289     0.3635   4.756 1.84e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.966 on 48 degrees of freedom
+Multiple R-squared:  0.3203,    Adjusted R-squared:  0.3062 
+F-statistic: 22.62 on 1 and 48 DF,  p-value: 1.839e-05
+
+> anova(mod8)
+Analysis of Variance Table
+
+Response: percentageFat
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+biceps     1 1435.4 1435.38  22.622 1.839e-05 ***
+Residuals 48 3045.7   63.45                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

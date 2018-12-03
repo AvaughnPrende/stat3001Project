@@ -1,0 +1,295 @@
+> mod1<-lm(percentageFat~wrist)
+> summary(mod1)
+
+Call:
+lm(formula = percentageFat ~ wrist)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14.8574  -7.0844  -0.0691   6.0672  26.6426 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  -51.334     24.869  -2.064  0.04443 * 
+wrist          3.923      1.347   2.913  0.00541 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.907 on 48 degrees of freedom
+Multiple R-squared:  0.1503,    Adjusted R-squared:  0.1326 
+F-statistic: 8.488 on 1 and 48 DF,  p-value: 0.005412
+
+----------------------------------------------------------------------------
+
+
+> mod2<-lm(percentageFat~forearm)
+> summary(mod2)
+
+Call:
+lm(formula = percentageFat ~ forearm)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-16.381  -6.431   1.077   5.434  25.321 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -36.4955    15.9684  -2.285 0.026743 *  
+forearm       2.0163     0.5581   3.613 0.000723 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.567 on 48 degrees of freedom
+Multiple R-squared:  0.2138,    Adjusted R-squared:  0.1974 
+F-statistic: 13.05 on 1 and 48 DF,  p-value: 0.0007232
+
+----------------------------------------------------------------------------
+
+> mod3<-lm(percentageFat~biceps)
+> summary(mod3)
+
+Call:
+lm(formula = percentageFat ~ biceps)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-16.233  -5.220   0.618   5.838  22.155 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -34.6490    11.7606  -2.946  0.00495 ** 
+biceps        1.7289     0.3635   4.756 1.84e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.966 on 48 degrees of freedom
+Multiple R-squared:  0.3203,    Adjusted R-squared:  0.3062 
+F-statistic: 22.62 on 1 and 48 DF,  p-value: 1.839e-05
+
+----------------------------------------------------------------------------
+
+> mod4<-lm(percentageFat~ankle)
+> summary(mod4)
+
+Call:
+lm(formula = percentageFat ~ ankle)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-17.340  -7.340  -2.019   6.544  24.950 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -24.0507    22.6224  -1.063   0.2930  
+ankle         1.9746     0.9892   1.996   0.0516 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.284 on 48 degrees of freedom
+Multiple R-squared:  0.07665,   Adjusted R-squared:  0.05741 
+F-statistic: 3.984 on 1 and 48 DF,  p-value: 0.05161
+
+----------------------------------------------------------------------------
+
+> mod5<-lm(percentageFat~knee)
+> summary(mod5)
+
+Call:
+lm(formula = percentageFat ~ knee)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-15.583  -5.987  -1.411   5.019  29.547 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -45.8354    17.4801  -2.622 0.011673 *  
+knee          1.7287     0.4509   3.834 0.000367 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.454 on 48 degrees of freedom
+Multiple R-squared:  0.2345,    Adjusted R-squared:  0.2185 
+F-statistic:  14.7 on 1 and 48 DF,  p-value: 0.0003667
+
+----------------------------------------------------------------------------
+
+> mod6<-lm(percentageFat~thigh)
+> summary(mod6)
+
+Call:
+lm(formula = percentageFat ~ thigh)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.9698  -4.4017  -0.1793   6.1363  20.9891 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -57.0808    14.7049  -3.882 0.000316 ***
+thigh         1.3375     0.2511   5.326 2.63e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.66 on 48 degrees of freedom
+Multiple R-squared:  0.3715,    Adjusted R-squared:  0.3584 
+F-statistic: 28.37 on 1 and 48 DF,  p-value: 2.631e-06
+
+----------------------------------------------------------------------------
+
+> mod7<-lm(percentageFat~hip)
+> summary(mod7)
+
+Call:
+lm(formula = percentageFat ~ hip)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-18.0472  -3.7298  -0.8837   4.6102  12.4380 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -86.7486    12.9565  -6.695 2.16e-08 ***
+hip           1.0799     0.1295   8.337 6.84e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.175 on 48 degrees of freedom
+Multiple R-squared:  0.5915,    Adjusted R-squared:  0.583 
+F-statistic: 69.51 on 1 and 48 DF,  p-value: 6.839e-11
+
+----------------------------------------------------------------------------
+
+> mod8<-lm(percentageFat~abdomen)
+> summary(mod8)
+
+Call:
+lm(formula = percentageFat ~ abdomen)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10.0298  -2.8493  -0.1363   2.9513  13.3113 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -50.03207    5.86255  -8.534 3.47e-11 ***
+abdomen       0.74143    0.06076  12.202 2.54e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.771 on 48 degrees of freedom
+Multiple R-squared:  0.7562,    Adjusted R-squared:  0.7511 
+F-statistic: 148.9 on 1 and 48 DF,  p-value: 2.541e-16
+
+----------------------------------------------------------------------------
+
+> mod9<-lm(percentageFat~chest)
+> summary(mod9)
+
+Call:
+lm(formula = percentageFat ~ chest)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.6961  -4.4535  -0.1689   2.8988  14.3625 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -61.21605   10.20882  -5.996 2.54e-07 ***
+chest         0.79278    0.09803   8.087 1.63e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.286 on 48 degrees of freedom
+Multiple R-squared:  0.5767,    Adjusted R-squared:  0.5679 
+F-statistic:  65.4 on 1 and 48 DF,  p-value: 1.627e-10
+
+----------------------------------------------------------------------------
+
+> mod10<-lm(percentageFat~neck)
+> summary(mod10)
+
+Call:
+lm(formula = percentageFat ~ neck)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.4828  -4.5791   0.4207   4.1909  18.8400 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -85.5687    17.5147  -4.886 1.19e-05 ***
+neck          2.7725     0.4548   6.097 1.78e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.253 on 48 degrees of freedom
+Multiple R-squared:  0.4364,    Adjusted R-squared:  0.4247 
+F-statistic: 37.17 on 1 and 48 DF,  p-value: 1.784e-07
+
+----------------------------------------------------------------------------
+
+> mod11<-lm(percentageFat~height)
+> summary(mod11)
+
+Call:
+lm(formula = percentageFat ~ height)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-16.086  -8.258  -1.758   7.864  25.866 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)  28.4827    38.3791   0.742    0.462
+height       -0.1070     0.5508  -0.194    0.847
+
+Residual standard error: 9.658 on 48 degrees of freedom
+Multiple R-squared:  0.000786,  Adjusted R-squared:  -0.02003 
+F-statistic: 0.03776 on 1 and 48 DF,  p-value: 0.8468
+
+----------------------------------------------------------------------------
+
+> mod12<-lm(percentageFat~weight)
+> summary(mod12)
+
+Call:
+lm(formula = percentageFat ~ weight)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15.8973  -4.3123   0.0914   3.2287  16.9592 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -23.54287    5.91775  -3.978 0.000233 ***
+weight        0.24696    0.03239   7.625 8.17e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.498 on 48 degrees of freedom
+Multiple R-squared:  0.5477,    Adjusted R-squared:  0.5383 
+F-statistic: 58.13 on 1 and 48 DF,  p-value: 8.169e-10
+
+----------------------------------------------------------------------------
+
+> mod13<-lm(percentageFat~age)
+> summary(mod13)
+
+Call:
+lm(formula = percentageFat ~ age)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15.2892  -7.7226   0.0047   5.8034  28.1259 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   5.1568     8.8779   0.581   0.5641  
+age           0.2788     0.1542   1.808   0.0769 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.349 on 48 degrees of freedom
+Multiple R-squared:  0.06377,   Adjusted R-squared:  0.04426 
+F-statistic: 3.269 on 1 and 48 DF,  p-value: 0.07686
